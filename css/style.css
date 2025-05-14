@@ -7,13 +7,17 @@
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.header-container{
+#home{
+    height: 868px;
     max-width: 1920px;
     width: 100%;
+}
+.header-container{
     height: 212px;
     display: flex;
     align-items: center;
-    gap:72px;
+    justify-content: space-between;
+
 }
 
 .header-logo{
@@ -22,10 +26,12 @@
     color: #d8d8d8;
     text-align: left;
     margin-left: 102px;
-    
 }
 
 .header-nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,3 +56,101 @@
     color: #d8d8d8;
 }
 
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 128px;
+}
+
+.hero-content p{
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 94px;
+}
+
+.btn-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:148px;
+    width: 486px;
+    background-color: black;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    gap: 37px;
+}
+
+.seta{
+    height: 70px;
+    width: 70px;
+    background-color: #233A14;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about {
+    height: 100vh;
+    max-width: 1920px;
+    width: 100%;
+    padding: 92px 20px;
+    text-align: center;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
+
+.about h1 {
+    font-size: 88px;
+    margin-bottom: 80px;
+    color: #062e0f; /* cor escura para imitar o efeito da imagem */
+    text-shadow: 2px 2px 4px #c5c5c5;
+}
+
+.containerabout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 461px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 270px;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.card h2 {
+
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 32px;
+    line-height: 1.5;
+}
