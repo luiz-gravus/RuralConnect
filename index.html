@@ -1,129 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RuralConnect</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header class="header-container">
-        <div class="header-logo">
-            Rural<br>Connect
-        </div>
-            <nav class="header-nav">
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#solucao">Solução</a></li>
-                    <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#clientes">Clientes</a></li>
-                </ul>
-            </nav>
-            
-    </header>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ['Montserrat', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              rural: '#233A14',
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-montserrat">
     <main>
-        <section class="container_pai_hero" id="home">
-            <div class="hero-content">
-                <h1>Empowering Farmers<br>With Drone Technology</h1>
-                <p>Mapeamento aéreo acessível e intuitivo para pequenos produtores, <br> microempreendedores e gestores municipais no campo.</p>
-                <a href="#" class="btn-hero">
-                    Get Started
-                    
-                    <div class="seta">
-                        <img src="images/Vector.png" alt="Seta" class="arrow">
-                    </div>
-                </a>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section id="home" class="h-screen w-full bg-cover bg-center text-white flex flex-col" style="background-image: url('./images/bg-hero.png')">
+        <header class="relative w-full max-w-7xl mx-auto flex justify-center items-center py-6 px-4">
 
-       <section class="about">
-            <h1>A CHAVE PARA O AGRO EFICIENTE</h1>
-            <div class="containerabout">
-                <div class="card">
-                    <img src="images/route.png" alt="Imagem de rota">
-                    <h2>Onde tudo começou</h2>
-                    <p>O campo pedia<br>conexão, e decidimos<br>trazer uma solução<br>inovadora.</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/user-key.png" alt="imagem de usuário">
-                    <h2>A virada chave</h2>
-                    <p>Percebemos que a<br>transformação precisava<br>ser profunda, com<br>impacto real.</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/plant-care.png" alt="Imagem de cuidado com planta">
-                    <h2>Nasce a RuralConnect</h2>
-                    <p>Unimos campo e<br>tecnologia com inovação<br>prática, humana e<br>transformadora.</p>
-                </div>
+            <!-- Logo à esquerda com position absolute -->
+            <div class="absolute left-4 md:left-10 top-4 text-3xl md:text-4xl font-bold leading-tight">
+              <a href="#">Rural<br />Connect</a>
             </div>
-        </section>
-        <section class="soluction">
-            <div class="image-soluction">
-                <img src="images/ruralProducer.png" alt="Imagem de um produtor rural">
+        
+            <!-- Navegação centralizada -->
+            <nav class="bg-white/20 backdrop-blur rounded-full px-6 py-3">
+              <ul class="flex gap-6 text-base md:text-lg font-medium text-white">
+                <li><a href="#home" class="hover:text-lime-300">Home</a></li>
+                <li><a href="#sobre" class="hover:text-lime-300">Sobre</a></li>
+                <li><a href="#solucao" class="hover:text-lime-300">Solução</a></li>
+                <li><a href="#beneficios" class="hover:text-lime-300">Benefícios</a></li>
+                <li><a href="#clientes" class="hover:text-lime-300">Clientes</a></li>
+              </ul>
+            </nav>
+        
+          </header>
+        <div class="flex-grow flex flex-col justify-center items-center text-center px-4">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold">Empowering Farmers<br />With Drone Technology</h1>
+          <p class="text-lg md:text-2xl my-6 max-w-2xl">Mapeamento aéreo acessível e intuitivo para pequenos produtores, microempreendedores e gestores municipais no campo.</p>
+          <a href="#fale-conosco" class="inline-flex items-center gap-4 bg-gray-300 text-gray-900 text-2xl md:text-3xl px-8 py-4 rounded-full hover:scale-105 transition">
+            Get Started
+            <div class="w-10 h-10 rounded-full bg-rural flex items-center justify-center">
+              <img src="images/Vector.png" alt="Seta" class="w-5 h-5" />
             </div>
-            <div class="text-soluction">
-                <div class="text-soluction-content">
-                    <img src="images/flightPlanning.png" alt="">
-                    <h2>Planejamento de Voo</h2>
-                    <p>Defina rotas de drone baseadas em área, clima e tipo de cultura</p>
-                </div>
-                <div class="text-soluction-content">
-                    <img src="images/droneIntegration.png" alt="">
-                    <h2>Integração com Drones</h2>
-                    <p>Gere PDFs prontos para análise com indicadores-chave</p>
-                </div>
-                <div class="text-soluction-content">
-                    <img src="images/interactiveMaps.png" alt="">
-                    <h2>Mapas Interativos</h2>
-                    <p>Visualize a saúde do solo e pragas em tempo real com heatmaps
-
-                    </p>
-                </div>
-                <div class="text-soluction-content">
-                    <img src="images/bigData.png" alt="">
-                    <h2>Relatórios Automatizados</h2>
-                    <p>Compatível com os modelos mais acessíveis do mercado</p>
-                </div>
-            </div>
-        </section>
-        <section class="benefits">
-            <div class="benefits-content">
-                <h2>95%</h2>
-                <h3>Satisfação dos Clientes</h3>
-                <p>Feedback positivo e engajamento constante com a solução.</p>
-            </div>
-            <div class="benefits-content">
-                <h2>100+</h2>
-                <h3>Produtores Ativos</h3>
-                <p>Mais de 100 agricultores já conectados e mapeando suas terras.</p>
-            </div>
-            <div class="benefits-content">
-                <h2>400+</h2>
-                <h3>Propriedades Mapeadas</h3>
-                <p>Áreas agrícolas analisadas com precisão por drones e IA.</p>
-            </div>
-            <div class="benefits-content">
-                <h2>100%</h2>
-                <h3>Dados em Tempo Real</h3>
-                <p>Atualizações constantes para decisões mais inteligentes no campo.</p>
-            </div>
-        </section>
-        <section class="clients">
-            
-
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-media">
-
+          </a>
         </div>
-        <div class="footer-content">
-            <h2>Copyright   2025: Design Grupo Rural Connect</h2>
-    </footer>
-</body>
+      </section>
+
+      <!-- About Section -->
+      <section id="sobre" class="bg-gray-200 py-16">
+        <div class="text-center mb-12 px-4">
+          <h2 class="text-3xl md:text-5xl font-bold text-green-900">A CHAVE PARA O AGRO EFICIENTE</h2>
+        </div>
+        <div class="flex flex-wrap justify-center gap-10 px-4">
+          <div class="w-full md:w-80 bg-white shadow rounded-lg p-6 text-center">
+            <img src="images/route.png" alt="Imagem de rota" class="mx-auto mb-4 w-40" />
+            <h3 class="text-xl font-semibold mb-2">Onde tudo começou</h3>
+            <p class="text-gray-700">O campo pedia conexão, e decidimos trazer uma solução inovadora.</p>
+          </div>
+          <div class="w-full md:w-80 bg-white shadow rounded-lg p-6 text-center">
+            <img src="images/user-key.png" alt="imagem de usuário" class="mx-auto mb-4 w-40" />
+            <h3 class="text-xl font-semibold mb-2">A virada chave</h3>
+            <p class="text-gray-700">Percebemos que a transformação precisava ser profunda, com impacto real.</p>
+          </div>
+          <div class="w-full md:w-80 bg-white shadow rounded-lg p-6 text-center">
+            <img src="images/plant-care.png" alt="Imagem de cuidado com planta" class="mx-auto mb-4 w-40" />
+            <h3 class="text-xl font-semibold mb-2">Nasce a RuralConnect</h3>
+            <p class="text-gray-700">Unimos campo e tecnologia com inovação prática, humana e transformadora.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solução Section -->
+      <section id="solucao" class="flex flex-col md:flex-row bg-gray-200 py-16 px-4 gap-8 items-center justify-center">
+        <div class="w-full md:w-1/2">
+          <img src="images/ruralProducer.png" alt="Imagem de um produtor rural" class="rounded-2xl mx-auto max-w-xs md:max-w-md" />
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col gap-6">
+          <div class="flex gap-4 items-start">
+            <img src="images/flightPlanning.png" alt="" class="w-16 h-16" />
+            <div>
+              <h3 class="text-xl font-bold mb-2">Planejamento de Voo</h3>
+              <p>Defina rotas de drone baseadas em área, clima e tipo de cultura.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <img src="images/droneIntegration.png" alt="" class="w-16 h-16" />
+            <div>
+              <h3 class="text-xl font-bold mb-2">Integração com Drones</h3>
+              <p>Gere PDFs prontos para análise com indicadores-chave.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <img src="images/interactiveMaps.png" alt="" class="w-16 h-16" />
+            <div>
+              <h3 class="text-xl font-bold mb-2">Mapas Interativos</h3>
+              <p>Visualize a saúde do solo e pragas em tempo real com heatmaps.</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <img src="images/bigData.png" alt="" class="w-16 h-16" />
+            <div>
+              <h3 class="text-xl font-bold mb-2">Relatórios Automatizados</h3>
+              <p>Compatível com os modelos mais acessíveis do mercado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="beneficios" class="bg-gray-200 py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-400 text-black rounded-2xl p-6 text-center hover:scale-105 transition">
+            <h2 class="text-5xl font-bold mb-4">95%</h2>
+            <h3 class="text-xl font-semibold mb-2">Satisfação dos Clientes</h3>
+            <p>Feedback positivo e engajamento constante com a solução.</p>
+          </div>
+          <div class="bg-rural text-white rounded-2xl p-6 text-center hover:scale-105 transition">
+            <h2 class="text-5xl font-bold mb-4">100+</h2>
+            <h3 class="text-xl font-semibold mb-2">Produtores Ativos</h3>
+            <p>Mais de 100 agricultores já conectados e mapeando suas terras.</p>
+          </div>
+          <div class="bg-gray-400 text-black rounded-2xl p-6 text-center hover:scale-105 transition">
+            <h2 class="text-5xl font-bold mb-4">400+</h2>
+            <h3 class="text-xl font-semibold mb-2">Propriedades Mapeadas</h3>
+            <p>Áreas agrícolas analisadas com precisão por drones e IA.</p>
+          </div>
+          <div class="bg-gray-400 text-black rounded-2xl p-6 text-center hover:scale-105 transition">
+            <h2 class="text-5xl font-bold mb-4">100%</h2>
+            <h3 class="text-xl font-semibold mb-2">Dados em Tempo Real</h3>
+            <p>Atualizações constantes para decisões mais inteligentes no campo.</p>
+          </div>
+        </div>
+      </section>
+      <section id="clientes" class="bg-gray-200 py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+          <div class="bg-rural rounded-2xl p-6 text-center hover:scale-105 transition">
+            <img src="images/maria costa.png" alt="Maria Costa" class="w-40 h-40 mx-auto mb-4 rounded-full object-cover" />
+            <h2 class="text-2xl font-bold mb-2">Maria Costa</h2>
+            <p class="text-sm">Dificuldade: pouco acesso à tecnologia.<br>Necessidade: planejamento simples.</p>
+          </div>
+          <div class="bg-rural rounded-2xl p-6 text-center hover:scale-105 transition">
+            <img src="images/joao da silva.png" alt="João da Silva" class="w-40 h-40 mx-auto mb-4 rounded-full object-cover" />
+            <h2 class="text-2xl font-bold mb-2">João da Silva</h2>
+            <p class="text-sm">Dificuldade: monitoramento das plantações.<br>Necessidade: tecnologia fácil.</p>
+          </div>
+          <div class="bg-rural rounded-2xl p-6 text-center hover:scale-105 transition">
+            <img src="images/carlos oliveira.png" alt="Carlos Oliveira" class="w-40 h-40 mx-auto mb-4 rounded-full object-cover" />
+            <h2 class="text-2xl font-bold mb-2">Carlos Oliveira</h2>
+            <p class="text-sm">Dificuldade: monitorar áreas grandes.<br>Necessidade: drones com câmeras.</p>
+          </div>
+        </div>
+      </section>
+      <section id="fale-conosco" class="bg-gray-200 py-16 px-4">
+        <div class="max-w-xl mx-auto">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Fale Conosco!</h2>
+          <form class="bg-white p-6 rounded-lg shadow-md space-y-4">
+            <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 border border-gray-300 rounded" />
+            <input type="email" name="email" placeholder="Seu e-mail" required class="w-full p-3 border border-gray-300 rounded" />
+            <textarea name="mensagem" placeholder="Sua mensagem" required class="w-full p-3 border border-gray-300 rounded h-32"></textarea>
+            <button type="submit" class="w-full py-3 bg-rural hover:bg-green-900 text-white rounded font-semibold">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <footer class="bg-rural text-white">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+          <ul class="flex justify-center gap-12 mb-4">
+            <li><img src="images/youtube.svg" alt="YouTube" class="w-8 h-8 filter invert" /></li>
+            <li><img src="images/whatsapp.svg" alt="WhatsApp" class="w-8 h-8 filter invert" /></li>
+            <li><img src="images/linkedin.svg" alt="LinkedIn" class="w-8 h-8 filter invert" /></li>
+            <li><img src="images/twitter-alt.svg" alt="Twitter" class="w-8 h-8 filter invert" /></li>
+            <li><img src="images/instagram.svg" alt="Instagram" class="w-8 h-8 filter invert" /></li>
+          </ul>
+          <div class="text-center text-sm">
+            <p>&copy; 2025: Design Grupo Rural Connect</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
